@@ -1,9 +1,16 @@
 ---
 import { SITE } from 'astrowind:config';
+import Image from '~/components/common/Image.astro';
 ---
 
-<span
-  class="self-center ml-2 rtl:ml-0 rtl:mr-2 text-2xl md:text-xl font-bold text-gray-900 whitespace-nowrap dark:text-white"
->
-  <span class="text-[#E31E26]">GJ</span> <span class="text-[#E31E26]">ASSIST</span>
-</span>
+<div class="flex items-center">
+  <Image
+    src="~/assets/images/gj-assist-logo.png"
+    alt={SITE?.name}
+    class="w-auto h-8"
+    width={200}
+    height={47}
+    loading="eager"
+    decoding="async"
+  />
+</div>

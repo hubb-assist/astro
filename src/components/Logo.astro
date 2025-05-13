@@ -1,16 +1,7 @@
 ---
 import { SITE } from 'astrowind:config';
-import Image from '~/components/common/Image.astro';
 ---
 
-<div class="flex items-center">
-  <Image
-    src="https://sq360.com.br/logo-hubb-novo/logo_hubb_assisit.png"
-    alt={SITE?.name}
-    class="w-auto h-8"
-    width={200}
-    height={47}
-    loading="eager"
-    decoding="async"
-  />
-</div>
+<span class="self-center text-2xl md:text-xl font-bold text-gray-900 whitespace-nowrap dark:text-white">
+  {SITE?.name}
+</span>

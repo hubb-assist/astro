@@ -60,7 +60,7 @@ export default defineConfig({
           removeAttributeQuotes: false,
         },
       },
-      Image: false,
+      Image: false,  // Disabled image compression to resolve SharedArrayBuffer error
       JavaScript: true,
       SVG: false,
       Logger: 1,

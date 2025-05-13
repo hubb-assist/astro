@@ -60,7 +60,7 @@ export default defineConfig({
           removeAttributeQuotes: false,
         },
       },
-      Image: false,  // Disabled image compression to resolve SharedArrayBuffer error
+      Image: true,
       JavaScript: true,
       SVG: false,
       Logger: 1,
@@ -73,6 +73,9 @@ export default defineConfig({
 
   image: {
     domains: ['cdn.pixabay.com'],
+    service: {
+      entrypoint: 'astro/assets/services/sharp',
+    },
   },
 
   markdown: {
